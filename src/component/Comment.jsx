@@ -28,12 +28,10 @@ const Comment = () => {
   const handelSubmit = (e) => {
     setComment(e.target.value);
     if (e.key === "Enter") {
-      console.log("entered");
-
       dispatch(
         addChat([
           {
-            name: 'Akhilesh',
+            name: "Akhilesh",
             message: comment,
           },
         ])
